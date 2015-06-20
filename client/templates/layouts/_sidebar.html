@@ -1,0 +1,16 @@
+<template name="_sidebar">
+    <div class="column col-sm-3" id="sidebar">
+        <a class="logo" href="#">R</a>
+        <ul class="nav">
+            <li class="active"><a href="/#home">{{i18n "home"}}</a>
+            </li>
+            <li><a href="{{ pathFor 'test' }}">Challenge Yourself</a>
+            </li>
+            <li><a href="{{ pathFor 'teacherRoom' }}">Teachers' Room</a>
+            </li>
+        </ul>
+        <ul class="nav hidden-xs" id="sidebar-footer">
+            {{> _footer}}
+        </ul>
+    </div>
+</template>
